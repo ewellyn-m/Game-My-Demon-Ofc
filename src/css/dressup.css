@@ -1,0 +1,183 @@
+*{
+    box-sizing: border-box;
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    background-color: lightsteelblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+#container-dressup {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    min-width: 80%;
+    height: 700px;
+    overflow: hidden;
+}
+
+#container-dressup > .title {
+    background-color: rgb(161, 136, 185);
+    display: flex;
+    color: white;
+    padding: 1.5%;
+    border-bottom: 2px dashed lightgrey;
+}
+
+#size {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-button {
+    position: absolute;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(236, 234, 234);
+    float: right;
+    width: 60%;
+    height: 150px;
+    border-bottom: 2px solid rgb(249, 221, 255);
+    left: 30%;
+}
+
+.section-button > p {
+    display: flex;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 40%;
+}
+
+.section-button .align-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 2%;
+}
+
+.section-button .button {
+    background-color:rgb(161, 136, 185);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    height: 70px;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+#person-image {
+    background-color: rgb(161, 136, 185);
+    position: absolute;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-left: 10%;
+    height: 620px;
+    float: left;
+}
+
+#person-image img {
+    position: relative;
+    width: 146;
+    height: 502;
+    right: 70px;
+}
+
+#person-image button {
+    font-size: 1.3em;
+    font-weight: 700;
+    background-color: rgb(161, 136, 185);
+    color: white;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.visual-selection {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 700px;
+    height: 450px;
+    left: 30%;
+    margin-top: 15%;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    height: 200px;
+    width: 10px;
+    
+}
+::-webkit-scrollbar-track {
+   background-color: rgb(184, 182, 182);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(161, 136, 185);
+}
+
+
+#color-hair-short,
+#color-hair-medio,
+#color-hair-longo,
+#eyes,
+#color-eyes-1,
+#color-eyes-2,
+#color-eyes-3,
+#color-eyes-4 {
+    position: absolute;
+    left: 35%;
+    top: 10%;
+    width: 700px;
+    display: none;
+    flex-wrap: wrap;
+}
+
+.border-button {
+    background-color: rgb(236, 234, 234);
+    border: 3px solid rgb(161, 136, 185);
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+}
+
+.hair-option {
+    display: none;
+}
+
+.hair-color-option {
+    display: none;
+}
+
+.eyes-option {
+    display: none;
+}
+
+.eyes-color-option {
+    display: none;
+}

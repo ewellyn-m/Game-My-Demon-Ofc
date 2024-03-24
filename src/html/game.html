@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/dressup.css">
+    <title>My Demon</title>
+</head>
+<body>
+    <div id="container-dressup">
+        <div class="title">
+            <h1>Escolha a sua Aparência</h1>
+        </div>
+
+        <div id="side">
+            <div class="section-button">
+                <p>Escolha o seu visual</p>
+                <div class="align-button">
+                    <div class="button" id="btn-hair">Cabelo</div>
+                    <div class="button" id="btn-color-hair">Cor cabelo</div>
+                    <div class="button" id="btn-eyes">Olhos</div>
+                    <div class="button" id="btn-color-eyes">Cor olhos</div>
+                </div>
+            </div>
+
+            <div id="person-image">
+                <img src="../imagens/corpo-ofc.png" alt="body-person" id="character-img">
+               <button>Ok</button>
+            </div>
+        </div>
+
+        <div class="visual-selection" id="hair">
+            <div class="hair_option" onclick="selectHair('../imagens/cabelos/cabelo-curto-preto.png')"><img src="../imagens/cabelos/cabelo-curto-preto.png" alt="cabeloCpreto" class="border-button"></div>
+
+            <div class="hair_option" onclick="selectHair('../imagens/cabelos/cabelo-medio-preto.png')"><img src="../imagens/cabelos/cabelo-medio-preto.png" alt="cabeloMpreto" class="border-button"></div>
+
+            <div class="hair_option" onclick="selectHair('../imagens/cabelos/cabelo-longo-preto.png')"><img src="../imagens/cabelos/cabelo-longo-preto.png" alt="cabeloLpreto" class="border-button"></div>
+        </div>
+
+        <!--cabelos curtos-->
+        <div class="visual-selection" id="color-hair-short">
+            <div class="hair_color_option" onclick="colorHair('../imagens/cabelos/cabelo-curto-preto.png')"><img src="../imagens/cabelos/cabelo-curto-preto.png" alt="cabeloCpreto" class="border-button"></div>
+
+            <div class="hair_color_option" onclick="colorHair('../imagens/cabelos/cabelo-curto-castanho.png')"><img src="../imagens/cabelos/cabelo-curto-castanho.png" alt="cabeloCcastanho" class="border-button"></div>
+
+            <div class="hair_color_option" onclick="colorHair('../imagens/cabelos/cabelo-curto-loiro.png')"><img src="../imagens/cabelos/cabelo-curto-loiro.png" alt="cabeloCloiro" class="border-button"></div>
+
+            <div class="hair_color_option" onclick="colorHair('../imagens/cabelos/cabelo-curto-ruivo.png')"><img src="../imagens/cabelos/cabelo-curto-ruivo.png" alt="cabeloCruivo" class="border-button"></div>
+
+            <div class="hair_color_option" onclick="colorHair('../imagens/cabelos/cabelo-curto-vermelho.png')"><img src="../imagens/cabelos/cabelo-curto-vermelho.png" alt="cabeloCvermelho" class="border-button"></div>
+
+            <div class="hair_color_option" onclick="colorHair('../imagens/cabelos/cabelo-curto-roxo.png')"><img src="../imagens/cabelos/cabelo-curto-roxo.png" alt="cabeloCroxo" class="border-button"></div>
+
+            <div class="hair_color_option" onclick="colorHair('../imagens/cabelos/cabelo-curto-rosa.png')"><img src="../imagens/cabelos/cabelo-curto-rosa.png" alt="cabeloCrosa" class="border-button"></div>
+        </div>
+
+          <!--cabelos medios-->
+          <div class="visual-selection" id="color-hair-medio">
+            <div class="hair-color-option" onclick="colorHair('../imagens/cabelos/cabelo-medio-preto.png')"><img src="../imagens/cabelos/cabelo-medio-preto.png" alt="cabeloMpreto" class="border-button"></div>
+
+            <div class="hair_color_option" onclick="colorHair('../imagens/cabelos/cabelo-medio-castanho.png')"><img src="../imagens/cabelos/cabelo-medio-castanho.png" alt="cabeloMcastanho" class="border-button"></div>
+
+            <div class="hair_color_option" onclick="colorHair('../imagens/cabelos/cabelo-medio-loiro.png')"><img src="../imagens/cabelos/cabelo-medio-loiro.png" alt="cabeloMloiro" class="border-button"></div>
+
+            <div class="hair_color_option" onclick="colorHair('../imagens/cabelos/cabelo-medio-ruivo.png')"><img src="../imagens/cabelos/cabelo-medio-ruivo.png" alt="cabeloMruivo" class="border-button"></div>
+
+            <div class="hair_color_option" onclick="colorHair('../imagens/cabelos/cabelo-medio-vermelho.png')"><img src="../imagens/cabelos/cabelo-medio-vermelho.png" alt="cabeloMvermelho" class="border-button"></div>
+
+            <div class="hair_color_option" onclick="colorHair('../imagens/cabelos/cabelo-medio-roxo.png')"><img src="../imagens/cabelos/cabelo-medio-roxo.png" alt="cabeloMroxo" class="border-button"></div>
+
+            <div class="hair_color_option" onclick="colorHair('../imagens/cabelos/cabelo-medio-rosa.png')"><img src="../imagens/cabelos/cabelo-medio-rosa.png" alt="cabeloMrosa" class="border-button"></div>
+        </div>
+
+          <!--cabelos longo-->
+          <div class="visual-selection" id="color-hair-longo">
+            <div class="hair_color_option" onclick="colorHair('../imagens/cabelos/cabelo-longo-preto.png')"><img src="../imagens/cabelos/cabelo-longo-preto.png" alt="cabeloLpreto" class="border-button"></div>
+
+            <div class="hair_color_option" onclick="colorHair('../imagens/cabelos/cabelo-longo-castanho.png')"><img src="../imagens/cabelos/cabelo-longo-castanho.png" alt="cabeloLcastanho" class="border-button"></div>
+
+            <div class="hair_color_option" onclick="colorHair('../imagens/cabelos/cabelo-longo-loiro.png')"><img src="../imagens/cabelos/cabelo-longo-loiro.png" alt="cabeloLloiro" class="border-button"></div>
+
+            <div class="hair_color_option" onclick="colorHair('../imagens/cabelos/cabelo-longo-ruivo.png')"><img src="../imagens/cabelos/cabelo-longo-ruivo.png" alt="cabeloLruivo" class="border-button"></div>
+
+            <div class="hair_color_option" onclick="colorHair('../imagens/cabelos/cabelo-longo-vermelho.png')"><img src="../imagens/cabelos/cabelo-longo-vermelho.png" alt="cabeloLvermelho" class="border-button"></div>
+
+            <div class="hair_color_option" onclick="colorHair('../imagens/cabelos/cabelo-longo-roxo.png')"><img src="../imagens/cabelos/cabelo-longo-roxo.png" alt="cabeloLroxo" class="border-button"></div>
+
+            <div class="hair_color_option" onclick="colorHair('../imagens/cabelos/cabelo-longo-rosa.png')"><img src="../imagens/cabelos/cabelo-longo-rosa.png" alt="cabeloLrosa" class="border-button"></div>
+        </div>
+
+        <!--olhos-->
+        <div class="visual-selection" id="eyes">
+            <div class="eyes_option" onclick="selectEyes('../imagens/olhos/olhos-1-roxos.png')"><img src="../imagens/olhos/olhos-1-roxos.png" alt="olhosroxos1" class="border-button"></div>
+            <div class="eyes_option" onclick="selectEyes('../imagens/olhos/olhos-2-roxos.png')"><img src="../imagens/olhos/olhos-2-roxos.png" alt="olhosroxos2" class="border-button"></div>
+            <div class="eyes_option" onclick="selectEyes('../imagens/olhos/olhos-3-roxos.png')"><img src="../imagens/olhos/olhos-3-roxos.png" alt="olhosroxos3" class="border-button"></div>
+            <div class="eyes_option" onclick="selectEyes('../imagens/olhos/olhos-4-roxos.png')"><img src="../imagens/olhos/olhos-4-roxos.png" alt="olhosroxos4" class="border-button"></div>
+        </div>
+
+        <!--olhos 1-->
+        <div class="visual-selection" id="color-eyes-1">
+
+            <div class="eyes_color_option" onclick="colorEyes('../imagens/olhos/olhos-1-roxos')"><img src="../imagens/olhos/olhos-1-roxos.png" alt="olhos1roxos" class="border-button"></div>
+
+            <div class="eyes_color_option" onclick="colorEyes('../imagens/olhos/olhos-1-preto')"><img src="../imagens/olhos/olhos-1-pretos.png" alt="olhos1preto" class="border-button"></div>
+
+            <div class="eyes_color_option" onclick="colorEyes('../imagens/olhos/olhos-1-azuis')"><img src="../imagens/olhos/olhos-1-azuis.png" alt="olhos1azuis" class="border-button"></div>
+
+            <div class="eyes_color_option" onclick="colorEyes('../imagens/olhos/olhos-1-verdes')"><img src="../imagens/olhos/olhos-1-verdes.png" alt="olhos1verdes" class="border-button"></div>
+
+            <div class="eyes_color_option" onclick="colorEyes('../imagens/olhos/olhos-1-rosa')"><img src="../imagens/olhos/olhos-1-rosa.png" alt="olhos1rosa" class="border-button"></div>
+
+            <div class="eyes_color_option" onclick="colorEyes('../imagens/olhos/olhos-1-castanhos')"><img src="../imagens/olhos/olhos-1-castanhos.png" alt="olhos1castanhos" class="border-button"></div>
+
+            <div class="eyes_color_option" onclick="colorEyes('../imagens/olhos/olhos-1-amarelos')"><img src="../imagens/olhos/olhos-1-amarelos.png" alt="olhos1amarelos" class="border-button"></div>
+
+            <div class="eyes_color_option" onclick="colorEyes('../imagens/olhos/olhos-1-vermelhos')"><img src="../imagens/olhos/olhos-1-vermelhos.png" alt="olhos1vermelhos" class="border-button"></div>
+        </div>
+
+        <!--olhos 2-->
+        <div class="visual-selection" id="color-eyes-2">
+
+            <div class="eyes_color_option" onclick="colorEyes('../imagens/olhos/olhos-2-roxos')"><img src="../imagens/olhos/olhos-2-roxos.png" alt="olhos2roxos" class="border-button"></div>
+
+            <div class="eyes_color_option" onclick="colorEyes('../imagens/olhos/olhos-2-preto')"><img src="../imagens/olhos/olhos-2-pretos.png" alt="olhos2preto" class="border-button"></div>
+
+            <div class="eyes_color_option" onclick="colorEyes('../imagens/olhos/olhos-2-azuis')"><img src="../imagens/olhos/olhos-2-azuis.png" alt="olhos1azuis" class="border-button"></div>
+
+            <div class="eyes_color_option" onclick="colorEyes('../imagens/olhos/olhos-2-verdes')"><img src="../imagens/olhos/olhos-2-verdes.png" alt="olhos2verdes" class="border-button"></div>
+
+            <div class="eyes_color_option" onclick="colorEyes('../imagens/olhos/olhos-2-rosa')"><img src="../imagens/olhos/olhos-2-rosa.png" alt="olhos2rosa" class="border-button"></div>
+
+            <div class="eyes_color_option" onclick="colorEyes('../imagens/olhos/olhos-2-castanhos')"><img src="../imagens/olhos/olhos-2-castanhos.png" alt="olhos2castanhos" class="border-button"></div>
+
+            <div class="eyes_color_option" onclick="colorEyes('../imagens/olhos/olhos-2-amarelos')"><img src="../imagens/olhos/olhos-2-amarelos.png" alt="olhos2amarelos" class="border-button"></div>
+
+            <div class="eyes_color_option" onclick="colorEyes('../imagens/olhos/olhos-2-vermelhos')"><img src="../imagens/olhos/olhos-2-vermelhos.png" alt="olhos2vermelhos" class="border-button"></div>
+        </div>
+
+        <!--olhos 3-->
+        <div class="visual-selection" id="color-eyes-3">
+
+            <div class="eyes_color_option" onclick="colorEyes('../imagens/olhos/olhos-3-roxos')"><img src="../imagens/olhos/olhos-3-roxos.png" alt="olhos3roxos" class="border-button"></div>
+
+            <div class="eyes_color_option" onclick="colorEyes('../imagens/olhos/olhos-3-preto')"><img src="../imagens/olhos/olhos-3-pretos.png" alt="olhos3preto" class="border-button"></div>
+
+            <div class="eyes_color_option" onclick="colorEyes('../imagens/olhos/olhos-3-azuis')"><img src="../imagens/olhos/olhos-3-azuis.png" alt="olhos3azuis" class="border-button"></div>
+
+            <div class="eyes_color_option" onclick="colorEyes('../imagens/olhos/olhos-3-verdes')"><img src="../imagens/olhos/olhos-3-verdes.png" alt="olhos3verdes" class="border-button"></div>
+
+            <div class="eyes_color_option" onclick="colorEyes('../imagens/olhos/olhos-3-rosa')"><img src="../imagens/olhos/olhos-3-rosa.png" alt="olhos3rosa" class="border-button"></div>
+
+            <div class="eyes_color_option" onclick="colorEyes('../imagens/olhos/olhos-3-castanhos')"><img src="../imagens/olhos/olhos-3-castanhos.png" alt="olhos3castanhos" class="border-button"></div>
+
+            <div class="eyes_color_option" onclick="colorEyes('../imagens/olhos/olhos-3-amarelos')"><img src="../imagens/olhos/olhos-3-amarelos.png" alt="olhos3amarelos" class="border-button"></div>
+
+            <div class="eyes_color_option" onclick="colorEyes('../imagens/olhos/olhos-3-vermelhos')"><img src="../imagens/olhos/olhos-3-vermelhos.png" alt="olhos3vermelhos" class="border-button"></div>
+        </div>
+
+         <!--olhos 4-->
+         <div class="visual-selection" id="color-eyes-4">
+
+            <div class="eyes_color_option" onclick="colorEyes('../imagens/olhos/olhos-4-roxos')"><img src="../imagens/olhos/olhos-4-roxos.png" alt="olhos4roxos" class="border-button"></div>
+
+            <div class="eyes_color_option" onclick="colorEyes('../imagens/olhos/olhos-4-preto')"><img src="../imagens/olhos/olhos-4-pretos.png" alt="olhos4preto" class="border-button"></div>
+
+            <div class="eyes_color_option" onclick="colorEyes('../imagens/olhos/olhos-4-azuis')"><img src="../imagens/olhos/olhos-4-azuis.png" alt="olhos4azuis" class="border-button"></div>
+
+            <div class="eyes_color_option" onclick="colorEyes('../imagens/olhos/olhos-4-verdes')"><img src="../imagens/olhos/olhos-4-verdes.png" alt="olhos4verdes" class="border-button"></div>
+
+            <div class="eyes_color_option" onclick="colorEyes('../imagens/olhos/olhos-4-rosa')"><img src="../imagens/olhos/olhos-4-rosa.png" alt="olhos4rosa" class="border-button"></div>
+
+            <div class="eyes_color_option" onclick="colorEyes('../imagens/olhos/olhos-4-castanhos')"><img src="../imagens/olhos/olhos-4-castanhos.png" alt="olhos4castanhos" class="border-button"></div>
+
+            <div class="eyes_color_option" onclick="colorEyes('../imagens/olhos/olhos-4-amarelos')"><img src="../imagens/olhos/olhos-4-amarelos.png" alt="olhos4amarelos" class="border-button"></div>
+
+            <div class="eyes_color_option" onclick="colorEyes('../imagens/olhos/olhos-4-vermelhos')"><img src="../imagens/olhos/olhos-4-vermelhos.png" alt="olhos4vermelhos" class="border-button"></div>
+        </div>
+
+    </div>
+
+    <script src="../javascript/game.js"></script>
+   
+</body>
+</html>
