@@ -278,3 +278,8 @@ function colorEyes(imagePath) {
          showEyesColor4();
      }
  });
+
+ document.getElementById("ok-button").addEventListener("click", function() {
+    document.getElementById("container-dressup").style.display = "none";
+    document.getElementById("game-container-2").style.display = "flex"; // ou "block" se preferir
+});
