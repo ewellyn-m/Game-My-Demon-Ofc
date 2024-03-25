@@ -42,12 +42,12 @@ const dialogo = [
     ]
   },
   { escolhas: [
-      { resposta: "- Bruuu!", 
+      { resposta: "-Mãe, pai cheguei da escola..", 
      caminho: 2 },
     ]
   },
   { escolhas: [
-      { resposta: "(Definitivamente esse nao foi o meu dia e nada me animaria agora a não ser... LEITE! Isso! Eu preciso de um copo de leite!)", 
+      { resposta: "(Definitivamente esse não foi o meu dia, certeza que tirei a nota mais baixa possivel nessa prova surpresa, bom, nao era supresa ja que o professor avisou, mas eu nao ouvi então foi surpresa sim. Acho nada me animaria agora a não ser... LEITE! Isso! Eu preciso de um copo de leite!) ", 
      caminho: 3 },
     ]
   },
@@ -72,17 +72,17 @@ const dialogo = [
     ]
   },
   { escolhas: [
-      { resposta: "(Abri a geladeira e me deparei com uma torta)", 
+      { resposta: "(Abri a geladeira e peguei a garrafa com leite)", 
      caminho: 8 },
     ]
   },
   { escolhas: [
-      { resposta: "-Ta ai uma das coisas boas quando meus pais viajam, sempre compram comidas gostosas para que eu nao me sinta tão sozinha", 
+      { resposta: "-o bom dessa viajem é que eu não vou precisar falar sobre minha pessima nota", 
      caminho: 9 },
     ]
   },
   { escolhas: [
-      { resposta: "(Termino de comer,  vou até o meu quarto e troco de roupa, colocando algo mais confortável)", 
+      { resposta: "(Termino de tomar o leite,  vou até o meu quarto e troco de roupa, colocando algo mais confortável)", 
      caminho: 10 },
     ]
   },
@@ -107,7 +107,7 @@ const dialogo = [
     ]
   },
   { escolhas: [
-      { resposta: "(Desço as escadas para o porão, aqui é tao escuro e úmido que estou começando a me arrepiar)", 
+      { resposta: "(Desço as escadas para o porão, aqui é tao escuro e úmido que estou começando a me arrepender de nao ter deixado isso para outra hora)", 
      caminho: 15 },
     ]
   },
@@ -122,7 +122,7 @@ const dialogo = [
     ]
   },
   { escolhas: [
-      { resposta: " -Que barulho é esse? acabei de escutar um barulho estranho vindo de um canto escuro ou é impressao minha?", 
+      { resposta: " -Que barulho é esse? (acabei de escutar um barulho estranho vindo de um canto escuro)", 
      caminho: 18 },
     ]
   },
@@ -188,13 +188,13 @@ const dialogo = [
   },
   { nome: "", texto: "-Eu nao credito que depois de tantos anos eu fui envocado de novo, nao é possivel que esse humanos nao apredem mesmo depois de tudo que passaram.... você me invoca e ainda tem a coragem de perguntar quem sou eu?", 
   escolhas: [
-      { resposta: "Eu to sonhando? so pode, não é possivel (sinto minha pressão cair e tudo a minha volta escurecer)", 
+      { resposta: "Eu to sonhando? so pode ser, não é possivel que.. (sinto minha pressão cair e tudo a minha volta escurecer)", 
       caminho: 32},
   ]
   },
   { nome: "", texto: "Por que você esta gritando humana? Ja nao bastava me invocar ainda tenho que ficar escutando gritos? o que voce espera ver depois de ter invocado um demonio? ver coelhinhos fofinhos?", 
   escolhas: [
-      { resposta: "D-demoni? eu to sonhando? so pode, não é possivel (sinto minha pressão cair e tudo a minha volta escurecer)", 
+      { resposta: "D-demoni? eu to sonhando? so pode ser, não é possivel que..(sinto minha pressão cair e tudo a minha volta escurecer)", 
       caminho: 33 },
   ]
   },
@@ -206,15 +206,15 @@ const dialogo = [
   },
   { nome: "", texto: "-Finalmente voce acordou", 
   escolhas: [
-      { resposta: "(olho para o lado vendo aquele cara esquisito bem ao meu lado) AAAAAAAAAAH", 
+      { resposta: "(olho para o lado vendo aquele cara esquisito bem ao meu lado)", 
       caminho: 35 },
   ]
   },
   { 
 nome: "", 
-texto: "Era so o que me faltava... escuta aqui, fala logo o que voce quer e me manda de volta para casa A G O R A.", 
+texto: "Finalmente acordou o bela adormecida, ja enrolou demais dormindo, me manda de volta e antes que o portal se abra de uma vez e os demonios comecem a invadir o seu mundo. Voces humanos nao são tão egoistas e so pensam em si mesmos. a barreira ja vai ser quebrada e seu mundo vai virar um caos, parece que nao leu o que estava escrito no livro", 
 escolhas: [
-  { resposta: "(O que eu quero? quem é esse maluco e o que ele ta fazendo aqui na minha casa, ou melhor, no meu quarto! eu acho que eu estou ficando louca)",
+  { resposta: "(O que esse cara ta falando, barreira, livro, destruição, quem é esse maluco e o que ele ta fazendo aqui na minha casa, ou melhor, no meu quarto!)",
 caminho: 36}
 ] 
 },
@@ -270,11 +270,14 @@ exibirDialogo(caminho); // Exibe o próximo diálogo
 const gameContainer = document.getElementById('game-container-2');
 gameContainer.style.backgroundImage = "url(../imagens/cenarios/cozinha.jpg)"; // Substitua com o caminho da sua nova imagem
 exibirDialogo(caminho); // Exibe o próximo diálogo
-
 } else if (caminho === 14) { // Resposta "Desço as escadas para o porão..."
 const gameContainer = document.getElementById('game-container-2');
 gameContainer.style.backgroundImage = "url(../imagens/cenarios/porao.avif)";
 exibirDialogo(caminho); // Exibe o próximo diálogo
+} else if (caminho === 34) { // Resposta "Desço as escadas para o porão..."
+  const gameContainer = document.getElementById('game-container-2');
+  gameContainer.style.backgroundImage = "url(../imagens/cenarios/quarto.jpg)";
+  exibirDialogo(caminho); // Exibe o próximo diálogo
 } else {
 const extraImagem = document.getElementById('extra-imagem');
 extraImagem.style.display = 'none'; // Oculta a imagem extra para outras opções

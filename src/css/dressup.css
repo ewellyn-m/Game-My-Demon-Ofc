@@ -56,10 +56,10 @@ body {
 .section-button > p {
     display: flex;
     font-weight: 700;
-    color: white;
+    color: rgb(80, 80, 80);
     text-align: center;
     padding-top: 10px;
-    padding-left: 40%;
+    padding-left: 29%;
 }
 
 .section-button .align-button {
